@@ -5,7 +5,7 @@ import { FormComponent } from "./FormComponent"
  * Es una función que devuelve una forma modal de un formulario.
  * @returns Un componente React.
  */
-export const ModalFormComponent = ({ data = { nombre: '', email: '' }, title, fields, toggle, modal, handleSubmit }) => {
+export const ModalFormComponent = ({ onChange, data, title, fields, toggle, modal, handleSubmit }) => {
 
     return (
         <>
@@ -17,11 +17,11 @@ export const ModalFormComponent = ({ data = { nombre: '', email: '' }, title, fi
             >
                 <ModalHeader toggle={toggle}>{title}</ModalHeader>
                 <ModalBody>
-                    <FormComponent data={data} id={"form-data"} fields={fields} handleSubmit={handleSubmit} />
+                    <FormComponent onChange={onChange} data={data} id={"form-data"} fields={fields} handleSubmit={handleSubmit} />
                 </ModalBody>
                 <ModalFooter>
                     <Button color="primary" type="submit" form="form-data">
-                        Agregar
+                        Guardar
                     </Button>{' '}
                     <Button color="danger" onClick={toggle}>
                         Cancelar

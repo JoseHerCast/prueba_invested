@@ -1,7 +1,7 @@
 import { Actions } from './Actions';
 
 /* Una función que devuelve el cuerpo de una tabla. */
-export const TableBody = ({ handleEdit, rows, columns, actions }) => {
+export const TableBody = ({ actionsCol, handleHistory, handleDelete, handleEdit, rows, columns, actions }) => {
     return (
         <>
             <tbody>
@@ -18,7 +18,7 @@ export const TableBody = ({ handleEdit, rows, columns, actions }) => {
                                 ))
                             }
                             {/* Columna especial de acciones */}
-                            <Actions handleEdit={handleEdit} actions={actions} />
+                            {actionsCol && <Actions row={item} handleHistory={handleHistory} handleDelete={handleDelete} handleEdit={handleEdit} actions={actions} />}
                         </tr>
                     ))
                 }

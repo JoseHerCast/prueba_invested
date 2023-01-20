@@ -1,9 +1,11 @@
+
 /* Representación de relaciones y su información en un formato JSON */
 export const clients = [
     { id: 1, nombre: "José Hernández Castro", correo: "jose@ptree.com.mx" },
     { id: 2, nombre: "Anyhelo Moreno Castro", correo: "danyhelottaviani@outlook.com" },
     { id: 3, nombre: "Carla Garzón Flores", correo: "test@outlook.com" },
 ]
+
 
 export const credits = [
     {

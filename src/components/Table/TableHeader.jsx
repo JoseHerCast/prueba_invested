@@ -3,7 +3,7 @@
  * Si las columnas son verdaderas, asigne las columnas.
  * @returns Un encabezado de tabla con las columnas pasadas como accesorios.
  */
-export const TableHeader = ({ columns }) => {
+export const TableHeader = ({ actionsCol, columns }) => {
     return (
         <>
             <thead>
@@ -15,7 +15,7 @@ export const TableHeader = ({ columns }) => {
                         ))
                     }
                     {/* Columna especial para las acciones */}
-                    <th className="text-center">acciones</th>
+                    {actionsCol && <th className="text-center">acciones</th>}
                 </tr>
             </thead>
         </>

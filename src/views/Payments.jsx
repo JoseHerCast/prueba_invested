@@ -4,7 +4,6 @@ import { TableComponent } from '.././components/Table/TableComponent';
 
 //Datos de prueba, la llave primaria siempre se llama 'id'
 import { clients, credits, payments } from '.././data/tables';
-import { paymentActions } from ".././data/actions";
 
 //Union de pagos respecto al crédito al que pertenecen
 const paymentJoinCredits = payments.map(payment => ({ ...payment, cliente_id: credits.filter(credit => credit.id === payment.credito_id)[0].cliente_id }))
@@ -21,7 +20,7 @@ const paymentCols = Object.keys(paymentJoinClients[0]);//Columnas con base en pr
 export const Payments = () => {
 
     //Inicializamos los registros de pagos
-    const [paymentsTabData, setCreditsTabData] = useState(paymentJoinClients);
+    const [paymentsTabData, setPaymentsTabData] = useState(paymentJoinClients);
 
     /* FILTRO (Hook, manejador y datos)*/
     const [filter, setFilter] = useState('');
@@ -46,7 +45,7 @@ export const Payments = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <TableComponent rows={filteredPaymentsData} columns={paymentCols} actions={paymentActions} />
+                        <TableComponent actionsCol={false} rows={filteredPaymentsData} columns={paymentCols} />
                     </Col>
                 </Row>
             </Container>

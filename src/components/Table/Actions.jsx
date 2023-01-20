@@ -4,7 +4,7 @@ import { Icons } from '../Icons';
 
 
 /* Un componente React que genera botones de acción a partir de un listado de objetos JSON. */
-export const Actions = ({ handleEdit, actions }) => {
+export const Actions = ({ row, handleHistory, handleEdit, handleDelete, actions }) => {
     const [actionsList, setActionsList] = useState(actions);
 
     return (
@@ -16,7 +16,9 @@ export const Actions = ({ handleEdit, actions }) => {
                         <Button key={index}
                             id={action.id.toString()}
                             color={action.color}
-                            onClick={action.name == "editar" ? ((e) => handleEdit(e)) : (() => { })}
+                            onClick={(e) => {
+                                action.name == "editar" ? handleEdit(row) : action.name == "eliminar" ? handleDelete(row) : handleHistory(row)
+                            }}
                         >
                             <Icons icon={action.icon} />
                         </Button>
