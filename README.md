@@ -28,7 +28,7 @@ Para iniciar el servidor de desarrollo, ejecuta el siguiente comando:
 ```
 npm run dev
 ```
-Abre tu navegador web y dirígete a la dirección http://localhost:4173. Deberías ver tu proyecto ejecutándose en el navegador.
+Abre tu navegador web y dirígete a la dirección http://localhost:5173. Deberías ver tu proyecto ejecutándose en el navegador.
 
 Para compilar el proyecto, ejecuta el siguiente comando:
 
@@ -43,6 +43,8 @@ Una vez compilado la versión de despliegue, podemos previsualizarla en el local
 ```
 npm run preview
 ```
+
+Abre tu navegador web y dirígete a la dirección http://localhost:4173. Deberías ver tu proyecto ejecutándose en el navegador.
 
 Para desplegar el proyecto, puedes usar una herramienta de despliegue automático como Heroku, Firebase, o GitHub Pages, o bien, puedes subir los archivos de la carpeta "dist" a tu servidor web de preferencia.
 
