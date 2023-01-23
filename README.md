@@ -14,7 +14,7 @@ Asegúrate de tener instalado Node.js y npm en tu sistema.
 Instala Vite de manera global ejecutando el siguiente comando en tu terminal:
 
 ```
-npm install -g @vite/cli
+npm install vite 
 Navega a la carpeta del proyecto en tu sistema de archivos utilizando el comando cd.
 ```
 
@@ -36,6 +36,13 @@ Para compilar el proyecto, ejecuta el siguiente comando:
 npm run build
 ```
 Una vez que la compilación haya terminado, se generará una carpeta llamada "dist" en la raíz del proyecto. Esta carpeta contiene los archivos necesarios para desplegar el proyecto en un servidor web.
+
+Una vez compilado la versión de despliegue, podemos previsualizarla en el localhost con el siguiente comando:
+
+
+```
+npm run preview
+```
 
 Para desplegar el proyecto, puedes usar una herramienta de despliegue automático como Heroku, Firebase, o GitHub Pages, o bien, puedes subir los archivos de la carpeta "dist" a tu servidor web de preferencia.
 
