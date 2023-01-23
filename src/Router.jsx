@@ -19,5 +19,5 @@ export const Router = createBrowserRouter([
     }
 ],
     {
-        baseName: "/prueba_invested",
+        baseName: "https://josehercast.github.io/prueba_invested/",
     });
