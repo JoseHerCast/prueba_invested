@@ -8,7 +8,7 @@ import { LayoutPublic } from './layout/LayoutPublic';
 /* Creación de un enrutador para la aplicación. */
 export const Router = createBrowserRouter([
     {
-        path: '/',
+        path: '/prueba_invested',
         element: <LayoutPublic />,
         errorElement: <NotFound />,
         children: [
