@@ -11,12 +11,13 @@ Era posible utilizar un mock server o la memoria del navegador para la consisten
 
 Asegúrate de tener instalado Node.js y npm en tu sistema.
 
+
 Instala Vite de manera global ejecutando el siguiente comando en tu terminal:
 
 ```
 npm install vite 
-Navega a la carpeta del proyecto en tu sistema de archivos utilizando el comando cd.
 ```
+Navega a la carpeta del proyecto en tu sistema de archivos utilizando el comando cd.
 
 Una vez dentro de la carpeta del proyecto, ejecuta el siguiente comando para instalar las dependencias necesarias:
 
