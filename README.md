@@ -52,3 +52,5 @@ Para desplegar el proyecto, puedes usar una herramienta de despliegue automátic
 Para detener el servidor, simplemente presiona CTRL + C en tu terminal.
 
 Ten en cuenta que es posible que algunos comandos o configuraciones varíen dependiendo de la configuración específica de tu proyecto.
+
+### NOTA: En caso de no haber podido desplegar los servidores de prueba/preview con vite, el repositorio fue cargado en una GitHub Page con la dirección: https://josehercast.github.io/prueba_invested/
