@@ -1,4 +1,5 @@
 import { Navbar, NavbarBrand, NavbarToggler, NavbarText, Nav, NavItem, NavLink } from "reactstrap"
+import { Link } from "react-router-dom"
 
 
 /**
@@ -23,7 +24,7 @@ export const NavbarComponent = ({ brand, items, title }) => {
                         elementos. Si los elementos son falsos, entonces no asignará los elementos. */
                         items && items.map((item, index) => (
                             <NavItem key={index}>
-                                <NavLink href={item.ref}>{item.name}</NavLink>
+                                <NavLink tag={Link} to={item.ref}>{item.name}</NavLink>
                             </NavItem>
                         ))
                     }

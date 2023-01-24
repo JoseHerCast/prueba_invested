@@ -9,10 +9,10 @@ export const Router = () => {
     return (
         <>
             <Routes>
-                <Route path='/' element={<Clients />} />
-                <Route path='/clientes' element={<Clients />} />
-                <Route path='/creditos' element={<Credits />} />
-                <Route path='/pagos' element={<Payments />} />
+                <Route path='/prueba_invested' element={<Clients />} />
+                <Route path='/prueba_invested/clientes' element={<Clients />} />
+                <Route path='/prueba_invested/creditos' element={<Credits />} />
+                <Route path='/prueba_invested/pagos' element={<Payments />} />
             </Routes>
         </>
     );
