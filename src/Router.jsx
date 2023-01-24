@@ -9,10 +9,10 @@ export const Router = () => {
     return (
         <>
             <Routes>
-                <Route path='/prueba_invested' element={<Clients />} />
-                <Route path='/prueba_invested/clientes' element={<Clients />} />
-                <Route path='/prueba_invested/creditos' element={<Credits />} />
-                <Route path='/prueba_invested/pagos' element={<Payments />} />
+                <Route path='https://josehercast.github.io/prueba_invested/' element={<Clients />} />
+                <Route path='https://josehercast.github.io/prueba_invested/clientes' element={<Clients />} />
+                <Route path='https://josehercast.github.io/prueba_invested/creditos' element={<Credits />} />
+                <Route path='https://josehercast.github.io/prueba_invested/pagos' element={<Payments />} />
             </Routes>
         </>
     );
