@@ -1,5 +1,7 @@
-import { Outlet } from "react-router-dom"
+import { HashRouter, Outlet } from "react-router-dom"
 import { Header } from "./Header"
+import { BrowserRouter } from "react-router-dom"
+import { Router } from "../Router"
 
 import { navItems } from "../data/nav-items"
 
@@ -11,9 +13,9 @@ export const LayoutPublic = () => {
     return (
         <>
             <Header navBrand={"Invested"} navItems={navItems} navTitle={"Prueba"} />
-            <main>
-                <Outlet />
-            </main>
+            <BrowserRouter>
+                <Router />
+            </BrowserRouter>
         </>
     )
 }
